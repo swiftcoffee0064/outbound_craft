@@ -1,0 +1,239 @@
+{
+  "version": 1,
+  "notes": "Recipes sourced from public Outbound guides/wikis (outbound.wikily.gg, outboundalmanac.com, Steam guides, news sites). Items marked 'unverified: true' have estimated quantities — correct them here; ids never need to change.",
+  "stations": [
+    { "id": "workbench", "name": { "en": "Workbench", "fr": "Établi" } },
+    { "id": "bolt_press", "name": { "en": "Bolt Press", "fr": "Presse à boulons" } },
+    { "id": "sheet_press", "name": { "en": "Sheet Press", "fr": "Presse à tôle" } },
+    { "id": "metal_smelter", "name": { "en": "Metal Smelter", "fr": "Fonderie de métal" } },
+    { "id": "sawmill", "name": { "en": "Sawmill", "fr": "Scierie" } },
+    { "id": "assembler", "name": { "en": "Assembler", "fr": "Assembleur" } },
+    { "id": "battery_workstation", "name": { "en": "Battery Workstation", "fr": "Atelier de batteries" } },
+    { "id": "spinning_wheel", "name": { "en": "Spinning Wheel", "fr": "Rouet" } },
+    { "id": "weaver", "name": { "en": "Weaver", "fr": "Métier à tisser" } },
+    { "id": "glass_smelter", "name": { "en": "Glass Smelter", "fr": "Fonderie de verre" } },
+    { "id": "rubber_processor", "name": { "en": "Rubber Processor", "fr": "Presse à caoutchouc" } }
+  ],
+  "items": [
+    { "id": "scrap_metal", "name": { "en": "Scrap Metal", "fr": "Ferraille" }, "type": "raw" },
+    { "id": "coarse_ore", "name": { "en": "Coarse Ore", "fr": "Minerai brut" }, "type": "raw" },
+    { "id": "rocks", "name": { "en": "Rocks", "fr": "Pierres" }, "type": "raw" },
+    { "id": "clay", "name": { "en": "Clay", "fr": "Argile" }, "type": "raw" },
+    { "id": "everwood", "name": { "en": "Everwood", "fr": "Bois Everwood" }, "type": "raw" },
+    { "id": "silverbark_log", "name": { "en": "Silverbark Log", "fr": "Bûche d'écorce argentée" }, "type": "raw" },
+    { "id": "lumber", "name": { "en": "Lumber", "fr": "Bois" }, "type": "raw" },
+    { "id": "fibre", "name": { "en": "Fibre", "fr": "Fibre" }, "type": "raw" },
+    { "id": "mineral", "name": { "en": "Mineral", "fr": "Minéral" }, "type": "raw" },
+    { "id": "rose_mineral", "name": { "en": "Rose Mineral", "fr": "Minéral rose" }, "type": "raw" },
+    { "id": "natural_rubber", "name": { "en": "Natural Rubber", "fr": "Caoutchouc naturel" }, "type": "raw" },
+    { "id": "water", "name": { "en": "Water", "fr": "Eau" }, "type": "raw" },
+    { "id": "grain", "name": { "en": "Grain", "fr": "Grain" }, "type": "raw" },
+
+    {
+      "id": "bolts",
+      "name": { "en": "Bolts", "fr": "Boulons" },
+      "type": "craftable",
+      "station": "bolt_press",
+      "ingredients": [{ "id": "scrap_metal", "qty": 2 }]
+    },
+    {
+      "id": "sheet_metal",
+      "name": { "en": "Sheet Metal", "fr": "Tôle" },
+      "type": "craftable",
+      "station": "sheet_press",
+      "ingredients": [{ "id": "scrap_metal", "qty": 2 }]
+    },
+    {
+      "id": "casing",
+      "name": { "en": "Casing", "fr": "Boîtier" },
+      "type": "craftable",
+      "station": "sheet_press",
+      "ingredients": [
+        { "id": "clay", "qty": 2 },
+        { "id": "sheet_metal", "qty": 1 }
+      ]
+    },
+    {
+      "id": "metal",
+      "name": { "en": "Metal", "fr": "Métal" },
+      "type": "craftable",
+      "station": "metal_smelter",
+      "ingredients": [{ "id": "scrap_metal", "qty": 2 }]
+    },
+    {
+      "id": "hardened_metal",
+      "name": { "en": "Hardened Metal", "fr": "Métal durci" },
+      "type": "craftable",
+      "station": "metal_smelter",
+      "unverified": true,
+      "ingredients": [{ "id": "coarse_ore", "qty": 1 }]
+    },
+    {
+      "id": "everwood_plank",
+      "name": { "en": "Everwood Plank", "fr": "Planche Everwood" },
+      "type": "craftable",
+      "station": "sawmill",
+      "ingredients": [{ "id": "everwood", "qty": 2 }]
+    },
+    {
+      "id": "silverbark_plank",
+      "name": { "en": "Silverbark Plank", "fr": "Planche d'écorce argentée" },
+      "type": "craftable",
+      "station": "sawmill",
+      "ingredients": [{ "id": "silverbark_log", "qty": 2 }]
+    },
+    {
+      "id": "thread",
+      "name": { "en": "Thread", "fr": "Fil" },
+      "type": "craftable",
+      "station": "spinning_wheel",
+      "ingredients": [{ "id": "fibre", "qty": 2 }]
+    },
+    {
+      "id": "cloth",
+      "name": { "en": "Cloth", "fr": "Tissu" },
+      "type": "craftable",
+      "station": "weaver",
+      "unverified": true,
+      "ingredients": [{ "id": "thread", "qty": 2 }]
+    },
+    {
+      "id": "electronics",
+      "name": { "en": "Electronics", "fr": "Électronique" },
+      "type": "craftable",
+      "station": "assembler",
+      "unverified": true,
+      "ingredients": [
+        { "id": "bolts", "qty": 2 },
+        { "id": "sheet_metal", "qty": 1 }
+      ]
+    },
+    {
+      "id": "battery_components",
+      "name": { "en": "Battery Components", "fr": "Composants de batterie" },
+      "type": "craftable",
+      "station": "battery_workstation",
+      "ingredients": [
+        { "id": "electronics", "qty": 1 },
+        { "id": "sheet_metal", "qty": 2 },
+        { "id": "bolts", "qty": 4 }
+      ]
+    },
+    {
+      "id": "glass",
+      "name": { "en": "Glass", "fr": "Verre" },
+      "type": "craftable",
+      "station": "glass_smelter",
+      "ingredients": [{ "id": "mineral", "qty": 1 }]
+    },
+    {
+      "id": "processed_rubber",
+      "name": { "en": "Processed Rubber", "fr": "Caoutchouc traité" },
+      "type": "craftable",
+      "station": "rubber_processor",
+      "unverified": true,
+      "ingredients": [{ "id": "natural_rubber", "qty": 1 }]
+    },
+
+    {
+      "id": "solar_panel",
+      "name": { "en": "Solar Panel", "fr": "Panneau solaire" },
+      "type": "craftable",
+      "station": "workbench",
+      "ingredients": [{ "id": "scrap_metal", "qty": 5 }]
+    },
+    {
+      "id": "wind_turbine",
+      "name": { "en": "Wind Turbine", "fr": "Éolienne" },
+      "type": "craftable",
+      "station": "workbench",
+      "unverified": true,
+      "ingredients": [
+        { "id": "scrap_metal", "qty": 4 },
+        { "id": "fibre", "qty": 4 }
+      ]
+    },
+    {
+      "id": "building_hammer",
+      "name": { "en": "Building Hammer", "fr": "Marteau de construction" },
+      "type": "craftable",
+      "station": "workbench",
+      "ingredients": [{ "id": "lumber", "qty": 3 }]
+    },
+    {
+      "id": "axe_t1",
+      "name": { "en": "Axe (Tier 1)", "fr": "Hache (niveau 1)" },
+      "type": "craftable",
+      "station": "workbench",
+      "unverified": true,
+      "ingredients": [
+        { "id": "lumber", "qty": 2 },
+        { "id": "scrap_metal", "qty": 2 }
+      ]
+    },
+    {
+      "id": "pickaxe_t1",
+      "name": { "en": "Pickaxe (Tier 1)", "fr": "Pioche (niveau 1)" },
+      "type": "craftable",
+      "station": "workbench",
+      "unverified": true,
+      "ingredients": [
+        { "id": "lumber", "qty": 2 },
+        { "id": "scrap_metal", "qty": 2 }
+      ]
+    },
+    {
+      "id": "sickle_t1",
+      "name": { "en": "Sickle (Tier 1)", "fr": "Faucille (niveau 1)" },
+      "type": "craftable",
+      "station": "workbench",
+      "unverified": true,
+      "ingredients": [
+        { "id": "lumber", "qty": 1 },
+        { "id": "scrap_metal", "qty": 2 }
+      ]
+    },
+    {
+      "id": "watering_can",
+      "name": { "en": "Watering Can", "fr": "Arrosoir" },
+      "type": "craftable",
+      "station": "workbench",
+      "unverified": true,
+      "ingredients": [
+        { "id": "sheet_metal", "qty": 2 },
+        { "id": "bolts", "qty": 2 }
+      ]
+    },
+    {
+      "id": "fishing_rod",
+      "name": { "en": "Fishing Rod", "fr": "Canne à pêche" },
+      "type": "craftable",
+      "station": "workbench",
+      "unverified": true,
+      "ingredients": [
+        { "id": "lumber", "qty": 2 },
+        { "id": "thread", "qty": 1 }
+      ]
+    },
+    {
+      "id": "sawmill_build",
+      "name": { "en": "Sawmill (station)", "fr": "Scierie (station)" },
+      "type": "craftable",
+      "station": "workbench",
+      "ingredients": [
+        { "id": "everwood", "qty": 10 },
+        { "id": "scrap_metal", "qty": 2 }
+      ]
+    },
+    {
+      "id": "metal_smelter_build",
+      "name": { "en": "Metal Smelter (station)", "fr": "Fonderie de métal (station)" },
+      "type": "craftable",
+      "station": "workbench",
+      "ingredients": [
+        { "id": "coarse_ore", "qty": 5 },
+        { "id": "rocks", "qty": 6 }
+      ]
+    }
+  ]
+}

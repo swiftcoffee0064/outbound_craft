@@ -1,0 +1,12 @@
+{
+  "name": "outbound-craft",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Crafting shopping list PWA for the game Outbound",
+  "scripts": {
+    "test": "node scripts/validate-data.mjs && node --test \"test/*.test.mjs\"",
+    "validate": "node scripts/validate-data.mjs",
+    "serve": "python3 -m http.server 8080"
+  }
+}

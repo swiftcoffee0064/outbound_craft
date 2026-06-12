@@ -1,0 +1,16 @@
+{
+  "name": "Outbound Craft",
+  "short_name": "Outbound Craft",
+  "description": "Crafting shopping list for the game Outbound — pick crafts, gather resources, tick them off.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#16211a",
+  "theme_color": "#16211a",
+  "lang": "en",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

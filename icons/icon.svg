@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="14" fill="#16211a"/>
+  <g stroke="#8fd14f" stroke-width="4" fill="none" stroke-linecap="round">
+    <path d="M14 20 l4 4 l7 -8"/>
+    <path d="M14 40 l4 4 l7 -8"/>
+  </g>
+  <g stroke="#9db39e" stroke-width="4" stroke-linecap="round">
+    <line x1="32" y1="22" x2="50" y2="22"/>
+    <line x1="32" y1="42" x2="50" y2="42"/>
+  </g>
+</svg>
