@@ -1,6 +1,6 @@
 {
-  "version": 1,
-  "notes": "Recipes sourced from public Outbound guides/wikis (outbound.wikily.gg, outboundalmanac.com, Steam guides, news sites). Items marked 'unverified: true' have estimated quantities — correct them here; ids never need to change.",
+  "version": 2,
+  "notes": "Recipes cross-checked against the Steam Community databases (Production Stations id=3725074523, Tools id=3725411744, Resources id=3724167433) and outbound.wikily.gg / outboundalmanac.com. Items marked 'unverified: true' have estimated quantities or uncertain ingredient names — correct them here; ids never need to change.",
   "stations": [
     { "id": "workbench", "name": { "en": "Workbench", "fr": "Établi" } },
     { "id": "bolt_press", "name": { "en": "Bolt Press", "fr": "Presse à boulons" } },
@@ -17,6 +17,7 @@
   "items": [
     { "id": "scrap_metal", "name": { "en": "Scrap Metal", "fr": "Ferraille" }, "type": "raw" },
     { "id": "coarse_ore", "name": { "en": "Coarse Ore", "fr": "Minerai brut" }, "type": "raw" },
+    { "id": "ore_2", "name": { "en": "Ore (Tier 2)", "fr": "Minerai (niveau 2)" }, "type": "raw" },
     { "id": "rocks", "name": { "en": "Rocks", "fr": "Pierres" }, "type": "raw" },
     { "id": "clay", "name": { "en": "Clay", "fr": "Argile" }, "type": "raw" },
     { "id": "everwood", "name": { "en": "Everwood", "fr": "Bois Everwood" }, "type": "raw" },
@@ -66,7 +67,7 @@
       "type": "craftable",
       "station": "metal_smelter",
       "unverified": true,
-      "ingredients": [{ "id": "coarse_ore", "qty": 1 }]
+      "ingredients": [{ "id": "ore_2", "qty": 1 }]
     },
     {
       "id": "everwood_plank",
@@ -94,17 +95,15 @@
       "name": { "en": "Cloth", "fr": "Tissu" },
       "type": "craftable",
       "station": "weaver",
-      "unverified": true,
-      "ingredients": [{ "id": "thread", "qty": 2 }]
+      "ingredients": [{ "id": "thread", "qty": 3 }]
     },
     {
       "id": "electronics",
       "name": { "en": "Electronics", "fr": "Électronique" },
       "type": "craftable",
       "station": "assembler",
-      "unverified": true,
       "ingredients": [
-        { "id": "bolts", "qty": 2 },
+        { "id": "bolts", "qty": 1 },
         { "id": "sheet_metal", "qty": 1 }
       ]
     },
@@ -131,8 +130,7 @@
       "name": { "en": "Processed Rubber", "fr": "Caoutchouc traité" },
       "type": "craftable",
       "station": "rubber_processor",
-      "unverified": true,
-      "ingredients": [{ "id": "natural_rubber", "qty": 1 }]
+      "ingredients": [{ "id": "natural_rubber", "qty": 2 }]
     },
 
     {

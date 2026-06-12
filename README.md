@@ -41,8 +41,11 @@ All recipes live in **`data/data.json`** (single source of truth): `items` with
 `name: {en, fr}`, `type: "raw" | "craftable"`, `station`, `ingredients: [{id, qty}]`, optional
 `output` (units produced per craft).
 
-Recipes were assembled from public guides and wikis (outbound.wikily.gg, outboundalmanac.com,
-Steam community guides). Items marked **`"unverified": true`** have *estimated quantities* — shown
+Recipes were assembled from the Steam Community databases ([Production Stations](https://steamcommunity.com/sharedfiles/filedetails/?id=3725074523),
+[Tools](https://steamcommunity.com/sharedfiles/filedetails/?id=3725411744),
+[Resources](https://steamcommunity.com/sharedfiles/filedetails/?id=3724167433)) cross-checked with
+outbound.wikily.gg and outboundalmanac.com. Items marked **`"unverified": true`** have *estimated
+quantities or uncertain ingredient names* — shown
 with a `≈` marker in the app. To correct a recipe, edit the quantities in `data.json` (ids never
 need to change), bump the top-level `"version"`, and run `npm test`.
 
@@ -58,8 +61,8 @@ corrections appear without a cache bump.
 ## Manual smoke checklist
 
 1. Add **2× Battery Components** → breakdown shows 2× Electronics, 4× Sheet Metal, 8× Bolts;
-   shopping list shows **36× Scrap Metal** (each unit reduces to 18).
+   shopping list shows **32× Scrap Metal** (each unit reduces to 16).
 2. Expand Electronics in the tree → raw counts appear (`gathered/needed`).
-3. Tap + on Scrap Metal until 36/36 → the craft flips to **✓ Craftable**, list shows all done.
+3. Tap + on Scrap Metal until 32/32 → the craft flips to **✓ Craftable**, list shows all done.
 4. Toggle **FR** → UI and item names switch (Tôle, Boulons, Ferraille…).
 5. Reload → selection, gathered counts and language persist.

@@ -29,8 +29,8 @@ test('anchor recipe: 2× Battery Components level-1 ingredients', () => {
 });
 
 test('anchor recipe: Battery Components fully reduce to scrap metal only', () => {
-  // electronics(2 bolts + 1 sheet) + 2 sheet + 4 bolts = 6 bolts + 3 sheet = 18 scrap
-  assert.deepEqual([...aggregateRaw([{ id: 'battery_components', qty: 1 }], itemsById)], [['scrap_metal', 18]]);
+  // electronics(1 bolt + 1 sheet) + 2 sheet + 4 bolts = 5 bolts + 3 sheet = 16 scrap
+  assert.deepEqual([...aggregateRaw([{ id: 'battery_components', qty: 1 }], itemsById)], [['scrap_metal', 16]]);
 });
 
 test('all stations referenced by craftables exist', () => {
