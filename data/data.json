@@ -1,5 +1,5 @@
 {
-  "version": 2,
+  "version": 3,
   "notes": "Recipes cross-checked against the Steam Community databases (Production Stations id=3725074523, Tools id=3725411744, Resources id=3724167433) and outbound.wikily.gg / outboundalmanac.com. Items marked 'unverified: true' have estimated quantities or uncertain ingredient names — correct them here; ids never need to change.",
   "stations": [
     { "id": "workbench", "name": { "en": "Workbench", "fr": "Établi" } },
@@ -24,6 +24,8 @@
     { "id": "silverbark_log", "name": { "en": "Silverbark Log", "fr": "Bûche d'écorce argentée" }, "type": "raw" },
     { "id": "lumber", "name": { "en": "Lumber", "fr": "Bois" }, "type": "raw" },
     { "id": "fibre", "name": { "en": "Fibre", "fr": "Fibre" }, "type": "raw" },
+    { "id": "hyperfibre", "name": { "en": "Hyperfibre", "fr": "Hyperfibre" }, "type": "raw" },
+    { "id": "chrome_ore", "name": { "en": "Chrome Ore", "fr": "Minerai de chrome" }, "type": "raw" },
     { "id": "mineral", "name": { "en": "Mineral", "fr": "Minéral" }, "type": "raw" },
     { "id": "rose_mineral", "name": { "en": "Rose Mineral", "fr": "Minéral rose" }, "type": "raw" },
     { "id": "natural_rubber", "name": { "en": "Natural Rubber", "fr": "Caoutchouc naturel" }, "type": "raw" },
@@ -96,6 +98,27 @@
       "type": "craftable",
       "station": "weaver",
       "ingredients": [{ "id": "thread", "qty": 3 }]
+    },
+    {
+      "id": "hyperthread",
+      "name": { "en": "Hyperthread", "fr": "Hyperfil" },
+      "type": "craftable",
+      "station": "spinning_wheel",
+      "ingredients": [{ "id": "hyperfibre", "qty": 2 }]
+    },
+    {
+      "id": "strong_weave",
+      "name": { "en": "Strong Weave", "fr": "Tissage solide" },
+      "type": "craftable",
+      "station": "weaver",
+      "ingredients": [{ "id": "hyperthread", "qty": 3 }]
+    },
+    {
+      "id": "adamant_metal",
+      "name": { "en": "Adamant Metal", "fr": "Métal adamantin" },
+      "type": "craftable",
+      "station": "metal_smelter",
+      "ingredients": [{ "id": "chrome_ore", "qty": 1 }]
     },
     {
       "id": "electronics",
@@ -221,6 +244,16 @@
       "ingredients": [
         { "id": "everwood", "qty": 10 },
         { "id": "scrap_metal", "qty": 2 }
+      ]
+    },
+    {
+      "id": "weaver_build",
+      "name": { "en": "Weaver (station)", "fr": "Métier à tisser (station)" },
+      "type": "craftable",
+      "station": "workbench",
+      "ingredients": [
+        { "id": "hyperthread", "qty": 4 },
+        { "id": "hyperfibre", "qty": 8 }
       ]
     },
     {
