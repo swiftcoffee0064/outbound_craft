@@ -1,36 +1,71 @@
 {
-  "version": 3,
-  "notes": "Recipes cross-checked against the Steam Community databases (Production Stations id=3725074523, Tools id=3725411744, Resources id=3724167433) and outbound.wikily.gg / outboundalmanac.com. Items marked 'unverified: true' have estimated quantities or uncertain ingredient names — correct them here; ids never need to change.",
+  "version": 4,
+  "notes": "Recipes from the Outbound Wiki production-chains page (data extracted from Early Access game files, May 2026) cross-checked with the Steam Community Production Stations Database (id=3725074523). Tier ids mapped to display names via the Steam guide (Ore 1/2/3 = Coarse/Red/Chrome Ore, Metal 1-4, Lumber 1-4, Fibre/Durafibre/Hyperfibre, Minerals 1-4 = Common/Onyx/Red/Rose). Where an item has alternative inputs in-game (Glass, Mushroom Soup, Paint, Electric Charge), only the primary recipe is modeled. Items marked 'unverified: true' have conflicting or incomplete sources — correct them here; ids never need to change.",
   "stations": [
     { "id": "workbench", "name": { "en": "Workbench", "fr": "Établi" } },
     { "id": "bolt_press", "name": { "en": "Bolt Press", "fr": "Presse à boulons" } },
     { "id": "sheet_press", "name": { "en": "Sheet Press", "fr": "Presse à tôle" } },
     { "id": "metal_smelter", "name": { "en": "Metal Smelter", "fr": "Fonderie de métal" } },
     { "id": "sawmill", "name": { "en": "Sawmill", "fr": "Scierie" } },
+    { "id": "nailer", "name": { "en": "Nailer", "fr": "Cloueuse" } },
     { "id": "assembler", "name": { "en": "Assembler", "fr": "Assembleur" } },
     { "id": "battery_workstation", "name": { "en": "Battery Workstation", "fr": "Atelier de batteries" } },
     { "id": "spinning_wheel", "name": { "en": "Spinning Wheel", "fr": "Rouet" } },
     { "id": "weaver", "name": { "en": "Weaver", "fr": "Métier à tisser" } },
+    { "id": "stuffing_maker", "name": { "en": "Stuffing Maker", "fr": "Machine à rembourrage" } },
     { "id": "glass_smelter", "name": { "en": "Glass Smelter", "fr": "Fonderie de verre" } },
-    { "id": "rubber_processor", "name": { "en": "Rubber Processor", "fr": "Presse à caoutchouc" } }
+    { "id": "smasher", "name": { "en": "Smasher", "fr": "Concasseur" } },
+    { "id": "rubber_processor", "name": { "en": "Rubber Processor", "fr": "Presse à caoutchouc" } },
+    { "id": "bamboo_splitter", "name": { "en": "Bamboo Splitter", "fr": "Fendeuse de bambou" } },
+    { "id": "bio_burner", "name": { "en": "Bio Burner", "fr": "Brûleur bio" } },
+    { "id": "recycler", "name": { "en": "Recycler", "fr": "Recycleur" } },
+    { "id": "mortar_pestle", "name": { "en": "Mortar and Pestle", "fr": "Mortier et pilon" } },
+    { "id": "baking_oven", "name": { "en": "Baking Oven", "fr": "Four à pain" } },
+    { "id": "cake_oven", "name": { "en": "Cake Oven", "fr": "Four à gâteaux" } },
+    { "id": "bread_press", "name": { "en": "Bread Press", "fr": "Presse à pain" } },
+    { "id": "cooking_pot", "name": { "en": "Cooking Pot", "fr": "Marmite" } },
+    { "id": "food_processor", "name": { "en": "Food Processor", "fr": "Robot de cuisine" } },
+    { "id": "roasting_station", "name": { "en": "Roasting Station", "fr": "Torréfacteur" } },
+    { "id": "coffee_maker", "name": { "en": "Coffee Maker", "fr": "Machine à café" } },
+    { "id": "tea_station", "name": { "en": "Tea Station", "fr": "Station à thé" } }
   ],
   "items": [
     { "id": "scrap_metal", "name": { "en": "Scrap Metal", "fr": "Ferraille" }, "type": "raw" },
     { "id": "coarse_ore", "name": { "en": "Coarse Ore", "fr": "Minerai brut" }, "type": "raw" },
-    { "id": "ore_2", "name": { "en": "Ore (Tier 2)", "fr": "Minerai (niveau 2)" }, "type": "raw" },
-    { "id": "rocks", "name": { "en": "Rocks", "fr": "Pierres" }, "type": "raw" },
-    { "id": "clay", "name": { "en": "Clay", "fr": "Argile" }, "type": "raw" },
-    { "id": "everwood", "name": { "en": "Everwood", "fr": "Bois Everwood" }, "type": "raw" },
-    { "id": "silverbark_log", "name": { "en": "Silverbark Log", "fr": "Bûche d'écorce argentée" }, "type": "raw" },
-    { "id": "lumber", "name": { "en": "Lumber", "fr": "Bois" }, "type": "raw" },
-    { "id": "fibre", "name": { "en": "Fibre", "fr": "Fibre" }, "type": "raw" },
-    { "id": "hyperfibre", "name": { "en": "Hyperfibre", "fr": "Hyperfibre" }, "type": "raw" },
+    { "id": "red_ore", "name": { "en": "Red Ore", "fr": "Minerai rouge" }, "type": "raw" },
     { "id": "chrome_ore", "name": { "en": "Chrome Ore", "fr": "Minerai de chrome" }, "type": "raw" },
-    { "id": "mineral", "name": { "en": "Mineral", "fr": "Minéral" }, "type": "raw" },
-    { "id": "rose_mineral", "name": { "en": "Rose Mineral", "fr": "Minéral rose" }, "type": "raw" },
+    { "id": "rocks", "name": { "en": "Rocks", "fr": "Pierres" }, "type": "raw" },
+    { "id": "mossrock", "name": { "en": "Mossrock", "fr": "Pierre moussue" }, "type": "raw" },
+    { "id": "amberstone", "name": { "en": "Amberstone", "fr": "Pierre d'ambre" }, "type": "raw" },
+    { "id": "quartz_rock", "name": { "en": "Quartz Rock", "fr": "Roche de quartz" }, "type": "raw" },
+    { "id": "clay", "name": { "en": "Clay", "fr": "Argile" }, "type": "raw" },
+    { "id": "lumber", "name": { "en": "Lumber", "fr": "Bois" }, "type": "raw" },
+    { "id": "light_lumber", "name": { "en": "Light Lumber", "fr": "Bois clair" }, "type": "raw" },
+    { "id": "red_lumber", "name": { "en": "Red Lumber", "fr": "Bois rouge" }, "type": "raw" },
+    { "id": "blossom_lumber", "name": { "en": "Blossom Lumber", "fr": "Bois fleuri" }, "type": "raw" },
+    { "id": "fibre", "name": { "en": "Fibre", "fr": "Fibre" }, "type": "raw" },
+    { "id": "durafibre", "name": { "en": "Durafibre", "fr": "Durafibre" }, "type": "raw" },
+    { "id": "hyperfibre", "name": { "en": "Hyperfibre", "fr": "Hyperfibre" }, "type": "raw" },
+    { "id": "cotton", "name": { "en": "Cotton", "fr": "Coton" }, "type": "raw" },
     { "id": "natural_rubber", "name": { "en": "Natural Rubber", "fr": "Caoutchouc naturel" }, "type": "raw" },
+    { "id": "bamboo", "name": { "en": "Bamboo", "fr": "Bambou" }, "type": "raw" },
+    { "id": "litter", "name": { "en": "Litter", "fr": "Déchets" }, "type": "raw" },
+    { "id": "flower_petals", "name": { "en": "Flower Petals", "fr": "Pétales de fleurs" }, "type": "raw" },
     { "id": "water", "name": { "en": "Water", "fr": "Eau" }, "type": "raw" },
     { "id": "grain", "name": { "en": "Grain", "fr": "Grain" }, "type": "raw" },
+    { "id": "corn", "name": { "en": "Corn", "fr": "Maïs" }, "type": "raw" },
+    { "id": "salt", "name": { "en": "Salt", "fr": "Sel" }, "type": "raw" },
+    { "id": "sugar", "name": { "en": "Sugar", "fr": "Sucre" }, "type": "raw" },
+    { "id": "honey", "name": { "en": "Honey", "fr": "Miel" }, "type": "raw" },
+    { "id": "berries", "name": { "en": "Blue Roadberries", "fr": "Baies bleues" }, "type": "raw" },
+    { "id": "tomatoes", "name": { "en": "Wild Tomatoes", "fr": "Tomates sauvages" }, "type": "raw" },
+    { "id": "coconut", "name": { "en": "Coconut", "fr": "Noix de coco" }, "type": "raw" },
+    { "id": "carrot", "name": { "en": "Carrot", "fr": "Carotte" }, "type": "raw" },
+    { "id": "banana", "name": { "en": "Banana", "fr": "Banane" }, "type": "raw" },
+    { "id": "ginger", "name": { "en": "Ginger", "fr": "Gingembre" }, "type": "raw" },
+    { "id": "lavender", "name": { "en": "Lavender", "fr": "Lavande" }, "type": "raw" },
+    { "id": "raw_coffee_beans", "name": { "en": "Raw Coffee Beans", "fr": "Grains de café crus" }, "type": "raw" },
+    { "id": "red_mushrooms", "name": { "en": "Red Mushrooms", "fr": "Champignons rouges" }, "type": "raw" },
 
     {
       "id": "bolts",
@@ -48,12 +83,12 @@
     },
     {
       "id": "casing",
-      "name": { "en": "Casing", "fr": "Boîtier" },
+      "name": { "en": "Industrial Casings", "fr": "Boîtiers industriels" },
       "type": "craftable",
       "station": "sheet_press",
       "ingredients": [
-        { "id": "clay", "qty": 2 },
-        { "id": "sheet_metal", "qty": 1 }
+        { "id": "sheet_metal", "qty": 1 },
+        { "id": "clay", "qty": 2 }
       ]
     },
     {
@@ -64,26 +99,67 @@
       "ingredients": [{ "id": "scrap_metal", "qty": 2 }]
     },
     {
+      "id": "coarse_metal",
+      "name": { "en": "Coarse Metal", "fr": "Métal brut" },
+      "type": "craftable",
+      "station": "metal_smelter",
+      "ingredients": [{ "id": "coarse_ore", "qty": 1 }]
+    },
+    {
       "id": "hardened_metal",
       "name": { "en": "Hardened Metal", "fr": "Métal durci" },
       "type": "craftable",
       "station": "metal_smelter",
-      "unverified": true,
-      "ingredients": [{ "id": "ore_2", "qty": 1 }]
+      "ingredients": [{ "id": "red_ore", "qty": 1 }]
+    },
+    {
+      "id": "adamant_metal",
+      "name": { "en": "Adamant Metal", "fr": "Métal adamantin" },
+      "type": "craftable",
+      "station": "metal_smelter",
+      "ingredients": [{ "id": "chrome_ore", "qty": 1 }]
     },
     {
       "id": "everwood_plank",
       "name": { "en": "Everwood Plank", "fr": "Planche Everwood" },
       "type": "craftable",
       "station": "sawmill",
-      "ingredients": [{ "id": "everwood", "qty": 2 }]
+      "unverified": true,
+      "ingredients": [{ "id": "lumber", "qty": 1 }]
     },
     {
       "id": "silverbark_plank",
       "name": { "en": "Silverbark Plank", "fr": "Planche d'écorce argentée" },
       "type": "craftable",
       "station": "sawmill",
-      "ingredients": [{ "id": "silverbark_log", "qty": 2 }]
+      "unverified": true,
+      "ingredients": [{ "id": "light_lumber", "qty": 1 }]
+    },
+    {
+      "id": "redwood_plank",
+      "name": { "en": "Redwood Plank", "fr": "Planche de bois rouge" },
+      "type": "craftable",
+      "station": "sawmill",
+      "unverified": true,
+      "ingredients": [{ "id": "red_lumber", "qty": 1 }]
+    },
+    {
+      "id": "blossom_plank",
+      "name": { "en": "Blossom Plank", "fr": "Planche fleurie" },
+      "type": "craftable",
+      "station": "sawmill",
+      "unverified": true,
+      "ingredients": [{ "id": "blossom_lumber", "qty": 1 }]
+    },
+    {
+      "id": "reinforced_plank",
+      "name": { "en": "Reinforced Planks", "fr": "Planches renforcées" },
+      "type": "craftable",
+      "station": "nailer",
+      "ingredients": [
+        { "id": "everwood_plank", "qty": 2 },
+        { "id": "metal", "qty": 1 }
+      ]
     },
     {
       "id": "thread",
@@ -93,11 +169,11 @@
       "ingredients": [{ "id": "fibre", "qty": 2 }]
     },
     {
-      "id": "cloth",
-      "name": { "en": "Cloth", "fr": "Tissu" },
+      "id": "durathread",
+      "name": { "en": "Durathread", "fr": "Durafil" },
       "type": "craftable",
-      "station": "weaver",
-      "ingredients": [{ "id": "thread", "qty": 3 }]
+      "station": "spinning_wheel",
+      "ingredients": [{ "id": "durafibre", "qty": 2 }]
     },
     {
       "id": "hyperthread",
@@ -107,6 +183,20 @@
       "ingredients": [{ "id": "hyperfibre", "qty": 2 }]
     },
     {
+      "id": "cloth",
+      "name": { "en": "Cloth", "fr": "Tissu" },
+      "type": "craftable",
+      "station": "weaver",
+      "ingredients": [{ "id": "thread", "qty": 3 }]
+    },
+    {
+      "id": "durable_weave",
+      "name": { "en": "Durable Weave", "fr": "Tissage durable" },
+      "type": "craftable",
+      "station": "weaver",
+      "ingredients": [{ "id": "durathread", "qty": 3 }]
+    },
+    {
       "id": "strong_weave",
       "name": { "en": "Strong Weave", "fr": "Tissage solide" },
       "type": "craftable",
@@ -114,11 +204,11 @@
       "ingredients": [{ "id": "hyperthread", "qty": 3 }]
     },
     {
-      "id": "adamant_metal",
-      "name": { "en": "Adamant Metal", "fr": "Métal adamantin" },
+      "id": "fluff_stuffing",
+      "name": { "en": "Fluff Stuffing", "fr": "Rembourrage moelleux" },
       "type": "craftable",
-      "station": "metal_smelter",
-      "ingredients": [{ "id": "chrome_ore", "qty": 1 }]
+      "station": "stuffing_maker",
+      "ingredients": [{ "id": "cotton", "qty": 3 }]
     },
     {
       "id": "electronics",
@@ -142,11 +232,51 @@
       ]
     },
     {
+      "id": "power_cell",
+      "name": { "en": "Power Cell", "fr": "Cellule d'énergie" },
+      "type": "craftable",
+      "station": "battery_workstation",
+      "unverified": true,
+      "ingredients": [
+        { "id": "battery_components", "qty": 2 },
+        { "id": "hardened_metal", "qty": 2 },
+        { "id": "hyperthread", "qty": 4 }
+      ]
+    },
+    {
+      "id": "common_minerals",
+      "name": { "en": "Common Minerals", "fr": "Minéraux communs" },
+      "type": "craftable",
+      "station": "smasher",
+      "ingredients": [{ "id": "rocks", "qty": 1 }]
+    },
+    {
+      "id": "onyx_minerals",
+      "name": { "en": "Onyx Minerals", "fr": "Minéraux d'onyx" },
+      "type": "craftable",
+      "station": "smasher",
+      "ingredients": [{ "id": "mossrock", "qty": 1 }]
+    },
+    {
+      "id": "red_minerals",
+      "name": { "en": "Red Minerals", "fr": "Minéraux rouges" },
+      "type": "craftable",
+      "station": "smasher",
+      "ingredients": [{ "id": "amberstone", "qty": 1 }]
+    },
+    {
+      "id": "rose_minerals",
+      "name": { "en": "Rose Minerals", "fr": "Minéraux roses" },
+      "type": "craftable",
+      "station": "smasher",
+      "ingredients": [{ "id": "quartz_rock", "qty": 1 }]
+    },
+    {
       "id": "glass",
       "name": { "en": "Glass", "fr": "Verre" },
       "type": "craftable",
       "station": "glass_smelter",
-      "ingredients": [{ "id": "mineral", "qty": 1 }]
+      "ingredients": [{ "id": "common_minerals", "qty": 3 }]
     },
     {
       "id": "processed_rubber",
@@ -154,6 +284,202 @@
       "type": "craftable",
       "station": "rubber_processor",
       "ingredients": [{ "id": "natural_rubber", "qty": 2 }]
+    },
+    {
+      "id": "bamboo_strips",
+      "name": { "en": "Bamboo Strips", "fr": "Lamelles de bambou" },
+      "type": "craftable",
+      "station": "bamboo_splitter",
+      "output": 4,
+      "ingredients": [{ "id": "bamboo", "qty": 1 }]
+    },
+    {
+      "id": "electric_charge",
+      "name": { "en": "Electric Charge", "fr": "Charge électrique" },
+      "type": "craftable",
+      "station": "bio_burner",
+      "ingredients": [{ "id": "lumber", "qty": 1 }]
+    },
+    {
+      "id": "download_coupon",
+      "name": { "en": "Download Coupon", "fr": "Coupon de téléchargement" },
+      "type": "craftable",
+      "station": "recycler",
+      "ingredients": [{ "id": "litter", "qty": 2 }]
+    },
+    {
+      "id": "paint",
+      "name": { "en": "Paint", "fr": "Peinture" },
+      "type": "craftable",
+      "station": "mortar_pestle",
+      "ingredients": [{ "id": "flower_petals", "qty": 5 }]
+    },
+
+    {
+      "id": "bread",
+      "name": { "en": "Bread", "fr": "Pain" },
+      "type": "craftable",
+      "station": "baking_oven",
+      "ingredients": [
+        { "id": "grain", "qty": 2 },
+        { "id": "water", "qty": 1 }
+      ]
+    },
+    {
+      "id": "pizza",
+      "name": { "en": "Pizza", "fr": "Pizza" },
+      "type": "craftable",
+      "station": "baking_oven",
+      "ingredients": [
+        { "id": "grain", "qty": 2 },
+        { "id": "water", "qty": 1 },
+        { "id": "tomato_sauce", "qty": 1 }
+      ]
+    },
+    {
+      "id": "jam",
+      "name": { "en": "Jam", "fr": "Confiture" },
+      "type": "craftable",
+      "station": "food_processor",
+      "ingredients": [{ "id": "berries", "qty": 2 }]
+    },
+    {
+      "id": "tomato_sauce",
+      "name": { "en": "Tomato Sauce", "fr": "Sauce tomate" },
+      "type": "craftable",
+      "station": "food_processor",
+      "ingredients": [{ "id": "tomatoes", "qty": 2 }]
+    },
+    {
+      "id": "coconut_smoothie",
+      "name": { "en": "Coconut Smoothie", "fr": "Smoothie à la noix de coco" },
+      "type": "craftable",
+      "station": "food_processor",
+      "ingredients": [
+        { "id": "coconut", "qty": 1 },
+        { "id": "water", "qty": 1 }
+      ]
+    },
+    {
+      "id": "bread_with_jam",
+      "name": { "en": "Bread with Jam", "fr": "Pain à la confiture" },
+      "type": "craftable",
+      "station": "bread_press",
+      "ingredients": [
+        { "id": "bread", "qty": 1 },
+        { "id": "jam", "qty": 1 }
+      ]
+    },
+    {
+      "id": "bread_with_honey",
+      "name": { "en": "Bread with Honey", "fr": "Pain au miel" },
+      "type": "craftable",
+      "station": "bread_press",
+      "ingredients": [
+        { "id": "bread", "qty": 1 },
+        { "id": "honey", "qty": 1 }
+      ]
+    },
+    {
+      "id": "carrot_cake",
+      "name": { "en": "Carrot Cake", "fr": "Gâteau à la carotte" },
+      "type": "craftable",
+      "station": "cake_oven",
+      "ingredients": [
+        { "id": "grain", "qty": 1 },
+        { "id": "water", "qty": 1 },
+        { "id": "carrot", "qty": 1 }
+      ]
+    },
+    {
+      "id": "banana_bread",
+      "name": { "en": "Banana Bread", "fr": "Pain à la banane" },
+      "type": "craftable",
+      "station": "cake_oven",
+      "ingredients": [
+        { "id": "grain", "qty": 1 },
+        { "id": "water", "qty": 1 },
+        { "id": "banana", "qty": 1 }
+      ]
+    },
+    {
+      "id": "corn_bread",
+      "name": { "en": "Corn Bread", "fr": "Pain de maïs" },
+      "type": "craftable",
+      "station": "cake_oven",
+      "ingredients": [
+        { "id": "corn", "qty": 1 },
+        { "id": "water", "qty": 1 },
+        { "id": "honey", "qty": 1 }
+      ]
+    },
+    {
+      "id": "mushroom_soup",
+      "name": { "en": "Mushroom Soup", "fr": "Soupe de champignons" },
+      "type": "craftable",
+      "station": "cooking_pot",
+      "ingredients": [
+        { "id": "red_mushrooms", "qty": 2 },
+        { "id": "water", "qty": 1 }
+      ]
+    },
+    {
+      "id": "roasted_coffee_beans",
+      "name": { "en": "Roasted Coffee Beans", "fr": "Grains de café torréfiés" },
+      "type": "craftable",
+      "station": "roasting_station",
+      "ingredients": [{ "id": "raw_coffee_beans", "qty": 1 }]
+    },
+    {
+      "id": "popcorn_salty",
+      "name": { "en": "Popcorn (Salty)", "fr": "Pop-corn salé" },
+      "type": "craftable",
+      "station": "roasting_station",
+      "ingredients": [
+        { "id": "corn", "qty": 1 },
+        { "id": "salt", "qty": 1 }
+      ]
+    },
+    {
+      "id": "popcorn_sweet",
+      "name": { "en": "Popcorn (Sweet)", "fr": "Pop-corn sucré" },
+      "type": "craftable",
+      "station": "roasting_station",
+      "ingredients": [
+        { "id": "corn", "qty": 1 },
+        { "id": "sugar", "qty": 1 }
+      ]
+    },
+    {
+      "id": "cup_of_coffee",
+      "name": { "en": "Cup of Coffee", "fr": "Tasse de café" },
+      "type": "craftable",
+      "station": "coffee_maker",
+      "unverified": true,
+      "ingredients": [
+        { "id": "roasted_coffee_beans", "qty": 5 },
+        { "id": "water", "qty": 1 }
+      ]
+    },
+    {
+      "id": "ginger_tea",
+      "name": { "en": "Ginger Tea", "fr": "Thé au gingembre" },
+      "type": "craftable",
+      "station": "tea_station",
+      "ingredients": [
+        { "id": "ginger", "qty": 1 },
+        { "id": "water", "qty": 1 }
+      ]
+    },
+    {
+      "id": "lavender_tea",
+      "name": { "en": "Lavender Tea", "fr": "Thé à la lavande" },
+      "type": "craftable",
+      "station": "tea_station",
+      "ingredients": [
+        { "id": "lavender", "qty": 1 },
+        { "id": "water", "qty": 1 }
+      ]
     },
 
     {
@@ -236,15 +562,77 @@
         { "id": "thread", "qty": 1 }
       ]
     },
+
+    {
+      "id": "bolt_press_build",
+      "name": { "en": "Bolt Press (station)", "fr": "Presse à boulons (station)" },
+      "type": "craftable",
+      "station": "workbench",
+      "ingredients": [{ "id": "scrap_metal", "qty": 7 }]
+    },
+    {
+      "id": "sheet_press_build",
+      "name": { "en": "Sheet Press (station)", "fr": "Presse à tôle (station)" },
+      "type": "craftable",
+      "station": "workbench",
+      "ingredients": [{ "id": "scrap_metal", "qty": 7 }]
+    },
+    {
+      "id": "metal_smelter_build",
+      "name": { "en": "Metal Smelter (station)", "fr": "Fonderie de métal (station)" },
+      "type": "craftable",
+      "station": "workbench",
+      "ingredients": [
+        { "id": "coarse_ore", "qty": 5 },
+        { "id": "rocks", "qty": 6 }
+      ]
+    },
     {
       "id": "sawmill_build",
       "name": { "en": "Sawmill (station)", "fr": "Scierie (station)" },
       "type": "craftable",
       "station": "workbench",
       "ingredients": [
-        { "id": "everwood", "qty": 10 },
+        { "id": "lumber", "qty": 10 },
         { "id": "scrap_metal", "qty": 2 }
       ]
+    },
+    {
+      "id": "nailer_build",
+      "name": { "en": "Nailer (station)", "fr": "Cloueuse (station)" },
+      "type": "craftable",
+      "station": "workbench",
+      "ingredients": [
+        { "id": "everwood_plank", "qty": 20 },
+        { "id": "lumber", "qty": 10 }
+      ]
+    },
+    {
+      "id": "assembler_build",
+      "name": { "en": "Assembler (station)", "fr": "Assembleur (station)" },
+      "type": "craftable",
+      "station": "workbench",
+      "ingredients": [
+        { "id": "bolts", "qty": 5 },
+        { "id": "sheet_metal", "qty": 5 }
+      ]
+    },
+    {
+      "id": "battery_workstation_build",
+      "name": { "en": "Battery Workstation (station)", "fr": "Atelier de batteries (station)" },
+      "type": "craftable",
+      "station": "workbench",
+      "ingredients": [
+        { "id": "electronics", "qty": 2 },
+        { "id": "sheet_metal", "qty": 4 }
+      ]
+    },
+    {
+      "id": "spinning_wheel_build",
+      "name": { "en": "Spinning Wheel (station)", "fr": "Rouet (station)" },
+      "type": "craftable",
+      "station": "workbench",
+      "ingredients": [{ "id": "fibre", "qty": 10 }]
     },
     {
       "id": "weaver_build",
@@ -257,14 +645,151 @@
       ]
     },
     {
-      "id": "metal_smelter_build",
-      "name": { "en": "Metal Smelter (station)", "fr": "Fonderie de métal (station)" },
+      "id": "stuffing_maker_build",
+      "name": { "en": "Stuffing Maker (station)", "fr": "Machine à rembourrage (station)" },
+      "type": "craftable",
+      "station": "workbench",
+      "ingredients": [{ "id": "cotton", "qty": 5 }]
+    },
+    {
+      "id": "glass_smelter_build",
+      "name": { "en": "Glass Smelter (station)", "fr": "Fonderie de verre (station)" },
       "type": "craftable",
       "station": "workbench",
       "ingredients": [
-        { "id": "coarse_ore", "qty": 5 },
-        { "id": "rocks", "qty": 6 }
+        { "id": "common_minerals", "qty": 5 },
+        { "id": "rocks", "qty": 5 }
       ]
+    },
+    {
+      "id": "smasher_build",
+      "name": { "en": "Smasher (station)", "fr": "Concasseur (station)" },
+      "type": "craftable",
+      "station": "workbench",
+      "ingredients": [{ "id": "rocks", "qty": 10 }]
+    },
+    {
+      "id": "rubber_processor_build",
+      "name": { "en": "Rubber Processor (station)", "fr": "Presse à caoutchouc (station)" },
+      "type": "craftable",
+      "station": "workbench",
+      "ingredients": [
+        { "id": "natural_rubber", "qty": 5 },
+        { "id": "bolts", "qty": 5 }
+      ]
+    },
+    {
+      "id": "bamboo_splitter_build",
+      "name": { "en": "Bamboo Splitter (station)", "fr": "Fendeuse de bambou (station)" },
+      "type": "craftable",
+      "station": "workbench",
+      "ingredients": [
+        { "id": "bamboo", "qty": 30 },
+        { "id": "rose_minerals", "qty": 20 }
+      ]
+    },
+    {
+      "id": "bio_burner_build",
+      "name": { "en": "Bio Burner (station)", "fr": "Brûleur bio (station)" },
+      "type": "craftable",
+      "station": "workbench",
+      "ingredients": [
+        { "id": "rocks", "qty": 3 },
+        { "id": "fibre", "qty": 3 }
+      ]
+    },
+    {
+      "id": "recycler_build",
+      "name": { "en": "Recycler (station)", "fr": "Recycleur (station)" },
+      "type": "craftable",
+      "station": "workbench",
+      "ingredients": [
+        { "id": "lumber", "qty": 2 },
+        { "id": "scrap_metal", "qty": 1 }
+      ]
+    },
+    {
+      "id": "mortar_pestle_build",
+      "name": { "en": "Mortar and Pestle (station)", "fr": "Mortier et pilon (station)" },
+      "type": "craftable",
+      "station": "workbench",
+      "ingredients": [{ "id": "rocks", "qty": 2 }]
+    },
+    {
+      "id": "baking_oven_build",
+      "name": { "en": "Baking Oven (station)", "fr": "Four à pain (station)" },
+      "type": "craftable",
+      "station": "workbench",
+      "ingredients": [
+        { "id": "everwood_plank", "qty": 2 },
+        { "id": "rocks", "qty": 2 },
+        { "id": "grain", "qty": 2 }
+      ]
+    },
+    {
+      "id": "cake_oven_build",
+      "name": { "en": "Cake Oven (station)", "fr": "Four à gâteaux (station)" },
+      "type": "craftable",
+      "station": "workbench",
+      "unverified": true,
+      "ingredients": [
+        { "id": "red_ore", "qty": 2 },
+        { "id": "grain", "qty": 2 }
+      ]
+    },
+    {
+      "id": "bread_press_build",
+      "name": { "en": "Bread Press (station)", "fr": "Presse à pain (station)" },
+      "type": "craftable",
+      "station": "workbench",
+      "ingredients": [
+        { "id": "bolts", "qty": 5 },
+        { "id": "sheet_metal", "qty": 5 }
+      ]
+    },
+    {
+      "id": "cooking_pot_build",
+      "name": { "en": "Cooking Pot (station)", "fr": "Marmite (station)" },
+      "type": "craftable",
+      "station": "workbench",
+      "ingredients": [
+        { "id": "light_lumber", "qty": 2 },
+        { "id": "scrap_metal", "qty": 2 }
+      ]
+    },
+    {
+      "id": "food_processor_build",
+      "name": { "en": "Food Processor (station)", "fr": "Robot de cuisine (station)" },
+      "type": "craftable",
+      "station": "workbench",
+      "ingredients": [
+        { "id": "lumber", "qty": 2 },
+        { "id": "berries", "qty": 2 }
+      ]
+    },
+    {
+      "id": "roasting_station_build",
+      "name": { "en": "Roasting Station (station)", "fr": "Torréfacteur (station)" },
+      "type": "craftable",
+      "station": "workbench",
+      "ingredients": [{ "id": "coarse_metal", "qty": 3 }]
+    },
+    {
+      "id": "coffee_maker_build",
+      "name": { "en": "Coffee Maker (station)", "fr": "Machine à café (station)" },
+      "type": "craftable",
+      "station": "workbench",
+      "ingredients": [
+        { "id": "roasted_coffee_beans", "qty": 1 },
+        { "id": "coarse_metal", "qty": 2 }
+      ]
+    },
+    {
+      "id": "tea_station_build",
+      "name": { "en": "Tea Station (station)", "fr": "Station à thé (station)" },
+      "type": "craftable",
+      "station": "workbench",
+      "ingredients": [{ "id": "water", "qty": 2 }]
     }
   ]
 }
